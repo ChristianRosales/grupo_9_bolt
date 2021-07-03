@@ -4,8 +4,8 @@
     padding: 0;
 }
 body {
-    font-family: 'MuseoModerno', cursive;
-    background-color: #ebebeb;
+
+    background-color: #F1FAEE;
     font-size: 12px;
 }
 .main-header-top-bar {
@@ -22,10 +22,47 @@ body {
 
 }
 
-
+.c {
+    font-family: 'Titillium Web', sans-serif;
+}
+.d {
+    font-family: 'Titillium Web', sans-serif;    
+    font-weight: 200;
+    font-size:22px;
+}
 /*
 colores
 #03071E
 #FFBD4A
-e5e5e5
+#F1FAEE
+#E5E5E5
+#F0EFEB
+#F72585
+#3F37C9
+#39b54a
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+CSS rules to specify families
+
+font-family: 'Staatliches', cursive;
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+CSS rules to specify families
+
+font-family: 'Staatliches', cursive;
+font-family: 'Titillium Web', sans-serif;
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Staatliches&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+CSS rules to specify families
+
+font-family: 'Oxygen', sans-serif;
+font-family: 'Staatliches', cursive;
+font-family: 'Titillium Web', sans-serif;
+
 */
