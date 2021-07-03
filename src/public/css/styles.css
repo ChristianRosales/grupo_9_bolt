@@ -11,9 +11,21 @@ body {
 .main-header-top-bar {
     width: 100%;
     margin: auto;
-    background-color: black;
+    background-color: #03071E;
 
 }
 .main-header-top-bar a {
     background-color: blanchedalmond;
 }
+.logo {
+    width:50%;
+
+}
+
+
+/*
+colores
+#03071E
+#FFBD4A
+e5e5e5
+*/
