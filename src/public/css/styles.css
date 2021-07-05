@@ -3,35 +3,7 @@
     margin: 0;
     padding: 0;
 }
-body {
-
-    background-color: #F1FAEE;
-    font-size: 12px;
-}
-.main-header-top-bar {
-    width: 100%;
-    margin: auto;
-    background-color: #03071E;
-
-}
-.main-header-top-bar a {
-    background-color: blanchedalmond;
-}
-.logo {
-    width:50%;
-
-}
-
-.c {
-    font-family: 'Titillium Web', sans-serif;
-}
-.d {
-    font-family: 'Titillium Web', sans-serif;    
-    font-weight: 200;
-    font-size:22px;
-}
-/*
-colores
+/* PALETA DE COLORES
 #03071E
 #FFBD4A
 #F1FAEE
@@ -40,29 +12,72 @@ colores
 #F72585
 #3F37C9
 #39b54a
+*/
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #F1FAEE;
+    font-size: 12px;
+}
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-CSS rules to specify families
+.main-header-top-bar {
+    background-color: #03071E;
+    width: 100%;
+    height: 62px;
+    margin: auto;
+    padding: 0 8px 0 8px;
+    display: flex;
+    justify-content: space-between;
 
-font-family: 'Staatliches', cursive;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    min-height: 62px;
+}
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
-CSS rules to specify families
+.logo, .logo img {
+    width:150px;
+    height: 62px;
+    min-width: 150px;
 
-font-family: 'Staatliches', cursive;
-font-family: 'Titillium Web', sans-serif;
+}
+.logo a {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Staatliches&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
-CSS rules to specify families
+}
+.empty {
+    width: 100%;
+    height: 100%;
+}
 
-font-family: 'Oxygen', sans-serif;
-font-family: 'Staatliches', cursive;
-font-family: 'Titillium Web', sans-serif;
+.navTabs {
+display: flex;
 
+
+    
+}
+.navTabs-button{
+    background-color: transparent;
+    color: #F0EFEB;
+    width: 22px;
+    height: 62px;
+    margin-right: 8px;
+    border: none;
+    font-size: 18px;
+}
+.navTabs-button i {
+    cursor: pointer;
+
+}
+
+#slider-cont {
+    padding: 0;
+}
+
+/* estandar de breakponts
+576
+768
+992
+1200
 */
