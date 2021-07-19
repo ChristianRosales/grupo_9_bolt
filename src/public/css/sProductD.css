@@ -7,34 +7,30 @@
 /* PALETA DE COLORES
 #03071E
 #FFBD4A
-#FFBD4A
+#F1FAEE
 #E5E5E5
 #F0EFEB
 #F72585
 #3F37C9
 #39b54a
-#F1FAEE
 */
 body {
     font-family: 'Titillium Web', sans-serif;
-    background-color: #F1FAEE;
+    background-color: white;
     font-size: 12px;
 }
-
+html {
+    font-family: 'Titillium Web', sans-serif;
+}
 .main-header-top-bar {
-    background-color: rgb(3, 7, 30);
+    background-color: #03071E;
     width: 100%;
     height: 62px;
     min-height: 62px;
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    top: 0px;
-    z-index: 17;
     margin: auto;
     padding: 0px 8px;
-    overflow: hidden;
-    font-family: 'Titillium Web', sans-serif;
 }
 
 .logo, .logo img {
@@ -90,7 +86,7 @@ body {
     z-index: 16;
     top: 62px;
     left: 0px;
-    background-color: rgb(3, 7, 30);
+    background-color: #03071E;
     overflow-x: hidden;
     padding-top: 60px;
     transition: all 0.5s ease 0s;
@@ -150,63 +146,88 @@ body {
     border-bottom: 2px solid rgb(255, 189, 74);
     margin: 10px 0px;
 }
-
+/*MAIN*/
 main {
     width: 90%;
     margin: auto;
 }
-.titles {
-    font-weight: 400;
-    font-size: 28px;
-    margin: 15px 0px;
-}
-.container-products article {
-    transition: all 450ms ease 0s;
-}
-.productos-destacados img {
-    display: block;
+.photo-container img{
+    display:block;
     width: 100%;
+    margin: 20px 0;
 }
-.caja {
+.attributes .name-container {
+    display: none;
+}
+.size {
+    margin: 15px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.select-talla, .select-cantidad{
+    width: 45%;
+    height: 48px;
+    cursor: pointer;
     position: relative;
-    width: 100%;
-    border-top: 3px solid #F1FAEE;
-    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
 }
-.caja .precio {
-    display: block;
-    font-size: 16px;
-    text-align: center;
-    background-color: #F1FAEE;
-    color: black;
-    width: auto;
-    height: 30px;
+.select-talla label, .select-cantidad label {
     position: absolute;
-    top: -15px;
-    left: 35%;
-    right: 35%;
-    padding: 5px;
-    transition: all 1s;
+    z-index: 20;
+    left: 16px;
+    top: 8px;
 }
-article:hover {
-    box-shadow: 0 0 10px rgb(100,100,100);
+.select-talla select, .select-cantidad select{
+    background-color: white;
+    border: 0.5px solid #E5E5E5;
+    width: 100%;
+    height: 48px;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    padding-left: 15px;
 }
-article {
-    margin: 10px 0; 
-    transition: 450ms;
-}
-article:hover .precio{
-    box-shadow: 0 0 3px rgb(100,100,100);
-    top: -25px;
-}
-article a{
+.button-add {
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+    padding-top: 15px;
+    border: none;
+    background-color: #F72585;
     text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 4px 0px;
+}
+
+.detail {
+    background-color: #E5E5E5;
+    padding: 5%;
+    margin: 0;
+}
+.detail h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2em;
+}
+.detail h3{
+    text-align: justify;
+    font-weight: 300;
+    font-size: 1.5em;
 }
 
 /*footer*/
 footer {
     background-color: rgb(3, 7, 30);
     color: rgb(240, 239, 235);
+}
+footer .info{
+    margin-top: 0;
+}
+footer .copyright {
+    margin-bottom: 0;
 }
 #help {
     border-bottom: 2px solid rgb(255, 189, 74);
@@ -288,16 +309,32 @@ footer .copyright {
 1200
 */
 @media (min-width: 576px){
-    .container-products {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
+    .attributes .color {
+        margin: 10% 0;
     }
-    article {
-        width: 45%;
+    .attributes .size, .button-add{
+        margin: 10% 0;
     }
+    
+     .name-container h1 {
+        font-weight: 900;
+        font-size: 3em;
+    }
+    .name-container h2 {
+        font-weight: 500;
+        font-size: 3em;
+    }
+    .attributes .color{
+        font-size: 1.5em;
+        color: grey;
+    }
+    .size .select-talla, .select-cantidad{
+        font-weight: 800;
+    }
+    .size select {
+        font-weight: 600;
+    }    
+    
 }
 @media (min-width: 768px){
     .main-header-top-bar {
@@ -331,11 +368,21 @@ footer .copyright {
         font-size: 32px;
         margin: 0px 14px;
     }
+    
+    .photo-container img{
+        width: 48%;
+        margin: 5px;
+    }
+    .photo-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
 
 }
 @media (min-width: 992px){
 main {
-    width: 93%;
+    width: 95%;
 }
 .sidenav {
     top: 78px;
@@ -381,6 +428,56 @@ footer .info {
 .social {
     height: 100px;
 }
+section {
+    margin: 20px 0;
+}
+.product {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.photo-container {
+    width: 55%;
+}
+.attributes {
+    width: 40%;
+}
+.name-container{
+    display: none;
+}
+.attributes .name-container {
+    display: block;
+}
+.photo-container img{
+    width: 48%;
+    margin: 5px;
+}
+.photo-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
 
+.size {
+    width: 100%;
+}
+.attributes .color {
+    margin: 10% 0;
+}
+.attributes .size, .button-add{
+    margin: 10% 0;
+}
+
+.attributes .name-container{
+    font-size: 2em;
+
+}
+.attributes .color{
+    font-size: 1.5em;
+    color: grey;
+}
+.size .select-talla, .select-cantidad{
+    font-weight: 600;
+}
 }
 

@@ -19,3 +19,6 @@ Las siguientes paginas nos ayudaron a definir como presentar los productos en el
 
 --->WIREFRAME PAGINA CALZADO DEPORTIVO "BOLT"
 https://wireframe.cc/pro/pp/c62d7eb49454032#1
+
+-->TABLERO DE TRABAJO TRELLO
+https://trello.com/b/qrupLjYa

@@ -7,34 +7,30 @@
 /* PALETA DE COLORES
 #03071E
 #FFBD4A
-#FFBD4A
+#F1FAEE
 #E5E5E5
 #F0EFEB
 #F72585
 #3F37C9
 #39b54a
-#F1FAEE
 */
 body {
     font-family: 'Titillium Web', sans-serif;
-    background-color: #F1FAEE;
+    background-color: white;
     font-size: 12px;
 }
-
+html {
+    font-family: 'Titillium Web', sans-serif;
+}
 .main-header-top-bar {
-    background-color: rgb(3, 7, 30);
+    background-color: #03071E;
     width: 100%;
     height: 62px;
     min-height: 62px;
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    top: 0px;
-    z-index: 17;
     margin: auto;
     padding: 0px 8px;
-    overflow: hidden;
-    font-family: 'Titillium Web', sans-serif;
 }
 
 .logo, .logo img {
@@ -90,7 +86,7 @@ body {
     z-index: 16;
     top: 62px;
     left: 0px;
-    background-color: rgb(3, 7, 30);
+    background-color: #03071E;
     overflow-x: hidden;
     padding-top: 60px;
     transition: all 0.5s ease 0s;
@@ -151,62 +147,109 @@ body {
     margin: 10px 0px;
 }
 
-main {
+/*FORM*/
+
+form {
+    padding: 5%;
+    text-align: center;
+    background-color: #e5e5e5;
+}
+.tile-register {
     width: 90%;
     margin: auto;
+    padding-bottom: 20px;
+    font-size: 2em;
+    font-weight: 700;
+    border-bottom: 1px solid #F1FAEE;
+    margin-bottom: 30px;
 }
-.titles {
-    font-weight: 400;
-    font-size: 28px;
-    margin: 15px 0px;
+.control-formulario {
+    margin: 15px 0;
 }
-.container-products article {
-    transition: all 450ms ease 0s;
+.control-formulario .control{
+    width: 80%;
+    height: 40px;
 }
-.productos-destacados img {
+.control {
+    border: 1px solid #F1FAEE;
+    border-radius: 4px;
+    padding: 12px 20px;
+}
+.sex-combo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.sex-combo .sex-title {
     display: block;
     width: 100%;
-}
-.caja {
-    position: relative;
-    width: 100%;
-    border-top: 3px solid #F1FAEE;
-    padding: 15px;
-}
-.caja .precio {
-    display: block;
+    text-align: justify;
+    padding: 0 15%;
+    margin-bottom: 10px;
     font-size: 16px;
-    text-align: center;
-    background-color: #F1FAEE;
-    color: black;
-    width: auto;
-    height: 30px;
-    position: absolute;
-    top: -15px;
-    left: 35%;
-    right: 35%;
+    font-weight: 600;
+}
+.sex-combo label {
+    display: block;
+    padding: 5px 10px;
+}
+.sex-combo input {
+    height: 20px;
+    width: 20px;
+}
+.terms-combo {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.terms-combo input{
+    height: 20px;
+    width: 20px;
+    display: block;
+}
+.terms-combo label {
+    display: block;
+    font-size: 14px;
+    width: 90%;
     padding: 5px;
-    transition: all 1s;
+
 }
-article:hover {
-    box-shadow: 0 0 10px rgb(100,100,100);
+.registrate-btn{
+    margin-top: 40px;
 }
-article {
-    margin: 10px 0; 
-    transition: 450ms;
+.registrate-btn button{
+    width: 50%;
+    height: 30px;
+    border: none;
+    background-color: #F1FAEE;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 4px 0px;
+
 }
-article:hover .precio{
-    box-shadow: 0 0 3px rgb(100,100,100);
-    top: -25px;
-}
-article a{
+.registrate-btn button a{
     text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+}
+.sign-in {
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 /*footer*/
 footer {
     background-color: rgb(3, 7, 30);
     color: rgb(240, 239, 235);
+}
+footer .info{
+    margin-top: 0;
+}
+footer .copyright {
+    margin-bottom: 0;
 }
 #help {
     border-bottom: 2px solid rgb(255, 189, 74);
@@ -288,18 +331,23 @@ footer .copyright {
 1200
 */
 @media (min-width: 576px){
-    .container-products {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
+    main {
+        margin: auto;
+        padding: 5% 10%;    
     }
-    article {
-        width: 45%;
+    form {
+        padding: 5%;
+        text-align: center;
+        background-color: #e5e5e5;
+        box-shadow: rgba(0, 0, 0, 0.40) 0px 16px 16px 0px;
     }
 }
 @media (min-width: 768px){
+    main {
+        margin: auto;
+        padding: 5% 20%;    
+    }
+
     .main-header-top-bar {
         height: 82px;
     }
@@ -331,11 +379,11 @@ footer .copyright {
         font-size: 32px;
         margin: 0px 14px;
     }
-
+    
 }
 @media (min-width: 992px){
 main {
-    width: 93%;
+    width: 90%;
 }
 .sidenav {
     top: 78px;
@@ -359,17 +407,6 @@ main {
     font-size: 28px;
     margin-left: 18px;
 }
-.titles {
-    font-size: 32px;
-    margin: 20px 0px;
-}
-article {
-    width: 23%;
-}
-.caja .precio {
-    left: 20%;
-    right: 20%;
-}
 footer .info {
     display: flex;
     justify-content: space-between;
@@ -380,6 +417,9 @@ footer .info {
 }
 .social {
     height: 100px;
+}
+section {
+    margin: 20px 0;
 }
 
 }

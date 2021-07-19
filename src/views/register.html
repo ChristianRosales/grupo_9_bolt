@@ -4,24 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thunderbolt | Home</title>
+    <title>Registrate</title>
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/sRegister.css">
 <!--agragando tipografia MuseoModerno-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
-
     <!--kit de iconos font awesome-->
-    <script src="https://kit.fontawesome.com/6f2cfe4930.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
+    <script src="https://kit.fontawesome.com/6f2cfe4930.js" crossorigin="anonymous"></script>  
 </head>
 <body>
-  <div id="mySidenav" class="sidenav" style="width: 0px;">
+<div id="mySidenav" class="sidenav" style="width: 0px;">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <div class="search-container">
             <input type="text" placeholder="Search.." name="search">
@@ -34,7 +28,7 @@
       <div id="line"></div>
       <a href="#">ACERCA DE NOSOTROS</a>
       <a href="#">CONTACTO</a>
-    </div>      
+</div>      
   <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
@@ -43,8 +37,7 @@
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
       }
-  </script>
-          
+  </script>          
   <header class="main-header" id="home">
       <div class="main-header-top-bar">
           <div class="logo">            
@@ -65,92 +58,47 @@
               </a>
           </nav>
       </div>
-  </header>
-  
-  <!--BS-carousel container-->        
-  <div class="container" id="slider-cont">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-          <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-          <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-        </ol>          
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item">
-            <img src="/images/0.jpg" style="width:100%;">
-          </div>
-    
-          <div class="item">
-            <img src="/images/1.jpg" style="width:100%;">
-          </div>
-        
-          <div class="item active">
-            <img src="/images/2.jpg" style="width:100%;">
-          </div>
-        </div>
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-  </div>
-  
+  </header>    
 <main>
-  <section class="productos-destacados">
-      <h3 class="titles">DESTACADOS</h3>          
-      <div class="container-products">
-          <article>  
-              <img src="/images/BeTrue.jpeg" alt="">
-              <div class="caja">
-                  <p class="precio">Mex$2799</p>
-                  <h4 class="nombreProd">Nike Air Max Pre-Day BeTrue</h4>
-                  <p class="descripcion">Calzado</p>
-                  <p class="color">1 color</p>
-              </div>
-          </article>
-          <article>
-              <img src="/images/lebron_summer.jpeg" alt="">
-              <div class="caja">
-                  <p class="precio">Mex$3799</p>
-                  <h4 class="nombreProd">LeBron 18 Low "Summer Refresh"</h4>
-                  <p class="descripcion">Calzado de básquetbol</p>
-                  <p class="color">1 color</p>
-              </div>
-          </article>
-          <article>
-              <img src="/images/canyon.jpeg" alt="">
-              <div class="caja">
-                  <p class="precio">Mex$1599</p>
-                  <h4 class="nombreProd">Nike Canyon</h4>
-                  <p class="descripcion">Sandalias para hombre</p>
-                  <p class="color">6 colores</p>
-          </div>
-          </article>
-          <article>
-              <img src="/images/phantom.jpeg" alt="">
-              <div class="caja">
-                  <p class="precio">Mex$5499</p>
-                  <h4 class="nombreProd">Nike Nike Phantom GT Elite Dynamic Fit 3D FG</h4>
-                  <p class="descripcion">Calzado de fútbol para terreno firme</p>
-                  <p class="color">1 color</p>
-              </div>    
-          </article>
-      </div>
-  </section>
+  <form action="/registro" method="POST" class="create-form">
+    <h1 class="tile-register">REGISTRARME</h1>
+    <div class="control-formulario">
+        <input type="email" name="email"  placeholder="CORREO ELECTRÓNICO*" class="control" required>
+    </div>
+    <div class="control-formulario">    
+        <input type="password" name="password" placeholder="CONTRASEÑA*" required class="control">
+    </div>
+    <div class="control-formulario">    
+      <input type="text" name="name" placeholder="NOMBRE*" required class="control">
+    </div>
+    <div class="control-formulario">    
+      <input type="text" name="lastname" placeholder="APELLIDOS*" required class="control">
+    </div>
+    <div class="control-formulario">    
+        <input type="date" name="fNac" required class="control">
+    </div>
+    <div class="sex-combo control-formulario">
+        <label class="sex-title">SEXO</label>
+        <input type="radio" name="sex" value="masculino" required>
+        <label>MASCULINO</label>
+        <input type="radio" name="sex" value="femenino" required>
+        <label>FEMENINO</label>
+    </div>
+    <div class="terms-combo control-formulario">
+        <input type="checkbox" name="categoria" value="accept">
+        <label class="terminos">He leído y acepto los Terminos y Condiciones y el Aviso de privacidad</label>
+    </div>
+    <div class="registrate-btn control-formulario">        
+        <button type="submit" name="enviar">
+            <a href="/" class="link-home">Enviar</a>  
+        </button>
+    </div>
+    <div class="sign-in">
+      <span>Tienes una cuenta?</span>
+      <a href="/login">Ingresa aquí</a>
+    </div>
+</form>
 </main>
-<div class="arrow-container">
-<a class="arrow" href="#home">
-  <i class="fa fa-arrow-up mvc-margin-right" aria-hidden="true"></i>
-</a>    
-</div>
-
 <footer>
   <section class="info">
 
@@ -185,12 +133,11 @@
       <h5>Todos los derechos reservados</h5>
   </section>
 </footer>
-
 <script>
   /* When the user clicks on the button, 
   toggle between hiding and showing the dropdown content */
   function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("myDropdown").classList.toggle("showHelp");
   }
   
   // Close the dropdown if the user clicks outside of it
@@ -200,18 +147,18 @@
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
+        if (openDropdown.classList.contains('showHelp')) {
+          openDropdown.classList.remove('showHelp');
         }
       }
     }
   }
-  </script>
+</script>
 <script>
   /* When the user clicks on the button, 
   toggle between hiding and showing the dropdown content */
   function myFunction2() {
-    document.getElementById("myDropdown2").classList.toggle("show");
+    document.getElementById("myDropdown2").classList.toggle("showAbout");
   }
   
   // Close the dropdown if the user clicks outside of it
@@ -221,14 +168,12 @@
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
+        if (openDropdown.classList.contains('showAbout')) {
+          openDropdown.classList.remove('showAbout');
         }
       }
     }
   }
-  </script>
-      
-
+</script>
 </body>
 </html>
