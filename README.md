@@ -26,4 +26,4 @@ Las siguientes paginas son elegidas por los productos o servicios que ofrecen. T
 https://wireframe.cc/pro/pp/c62d7eb49454032#1
 
 ---> TABLERO DE TRABAJO TRELLO
-https://trello.com/b/qrupLjYa
+https://trello.com/proyectointegradorequipo9/home
