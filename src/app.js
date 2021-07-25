@@ -20,5 +20,9 @@ app.get('/register', (req, res) => {
 app.get('/login', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/login.html'));
 });
+//configurando EJS
+app.set('view engine', 'ejs');
+app.set('views', './views');
+
 
 app.listen(port, () => console.log('Servidor corriendo en el puerto ' + port));
