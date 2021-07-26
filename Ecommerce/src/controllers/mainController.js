@@ -1,6 +1,6 @@
 const controller = {
     index: (req, res) => {
-        res.render('index', { title: 'Express' });
+        return res.render('index');
     }
 }
 

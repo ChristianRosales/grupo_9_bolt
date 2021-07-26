@@ -1,0 +1,45 @@
+<div id="mySidenav" class="sidenav" style="width: 0px;">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <div class="search-container">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </div>
+    <a href="#">COLECCIONES</a>
+    <a href="#">HOMBRE</a>
+    <a href="#">MUJER</a>
+    <a href="#">NIÑOS</a>
+    <div id="line"></div>
+    <a href="#">ACERCA DE NOSOTROS</a>
+    <a href="#">CONTACTO</a>
+  </div>      
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+        
+<header class="main-header" id="home">
+    <div class="main-header-top-bar">
+        <div class="logo">            
+            <a href="/">
+                <img src="/images/logo.png">
+            </a>
+        </div>
+        <div class="empty"></div>
+        <nav class="navTabs">
+            <a href="/productCart" class="navTabs-button" id="minicartIcon">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+            </a>
+            <a href="/register" class="navTabs-button" id="userIcon">
+                <i class="fas fa-user" aria-hidden="true"></i>
+            </a>
+            <a class="navTabs-button" id="menuIcon" onclick="openNav()">
+                <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+            </a>
+        </nav>
+    </div>
+</header>
