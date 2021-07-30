@@ -1,6 +1,6 @@
 EQUIPO 9
 --------------------------
-SPRINT 2
+SPRINT 2: RETRO DEL SPRINT 1
 
 ******************************
 Calendarizacion de trabajo
