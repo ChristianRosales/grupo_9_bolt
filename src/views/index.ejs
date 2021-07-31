@@ -1,71 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thunderbolt | Home</title>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles.css">
-<!--agragando tipografia MuseoModerno-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
-
-    <!--kit de iconos font awesome-->
-    <script src="https://kit.fontawesome.com/6f2cfe4930.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
-</head>
+<%- include('./partials/head')%>
 <body>
-  <div id="mySidenav" class="sidenav" style="width: 0px;">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <div class="search-container">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-      </div>
-      <a href="#">COLECCIONES</a>
-      <a href="#">HOMBRE</a>
-      <a href="#">MUJER</a>
-      <a href="#">NIÑOS</a>
-      <div id="line"></div>
-      <a href="#">ACERCA DE NOSOTROS</a>
-      <a href="#">CONTACTO</a>
-    </div>      
-  <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-      }
-      
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-  </script>
-          
-  <header class="main-header" id="home">
-      <div class="main-header-top-bar">
-          <div class="logo">            
-              <a href="/">
-                  <img src="/images/logo.png">
-              </a>
-          </div>
-          <div class="empty"></div>
-          <nav class="navTabs">
-              <a href="/productCart" class="navTabs-button" id="minicartIcon">
-                  <i class="fas fa-shopping-cart" aria-hidden="true"></i>
-              </a>
-              <a href="/register" class="navTabs-button" id="userIcon">
-                  <i class="fas fa-user" aria-hidden="true"></i>
-              </a>
-              <a class="navTabs-button" id="menuIcon" onclick="openNav()">
-                  <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
-              </a>
-          </nav>
-      </div>
-  </header>
+  <%- include('./partials/header')%>
   
   <!--BS-carousel container-->        
   <div class="container" id="slider-cont">

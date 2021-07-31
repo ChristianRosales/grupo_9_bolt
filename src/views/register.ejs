@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head')%>
+<body>
+<%- include('./partials/header')%>
+
+<main>
+  <form action="/registro" method="POST" class="create-form">
+    <h1 class="tile-register">REGISTRARME</h1>
+    <div class="control-formulario">
+        <input type="email" name="email"  placeholder="CORREO ELECTRÓNICO*" class="control" required>
+    </div>
+    <div class="control-formulario">    
+        <input type="password" name="password" placeholder="CONTRASEÑA*" required class="control">
+    </div>
+    <div class="control-formulario">    
+      <input type="text" name="name" placeholder="NOMBRE*" required class="control">
+    </div>
+    <div class="control-formulario">    
+      <input type="text" name="lastname" placeholder="APELLIDOS*" required class="control">
+    </div>
+    <div class="control-formulario">    
+        <input type="date" name="fNac" required class="control">
+    </div>
+    <div class="sex-combo control-formulario">
+        <label class="sex-title">SEXO</label>
+        <input type="radio" name="sex" value="masculino" required>
+        <label>MASCULINO</label>
+        <input type="radio" name="sex" value="femenino" required>
+        <label>FEMENINO</label>
+    </div>
+    <div class="terms-combo control-formulario">
+        <input type="checkbox" name="categoria" value="accept">
+        <label class="terminos">He leído y acepto los Terminos y Condiciones y el Aviso de privacidad</label>
+    </div>
+    <div class="registrate-btn control-formulario">        
+        <button type="submit" name="enviar">
+            <a href="/" class="link-home">Enviar</a>  
+        </button>
+    </div>
+    <div class="sign-in">
+      <span>Tienes una cuenta?</span>
+      <a href="/login">Ingresa aquí</a>
+    </div>
+</form>
+</main>
+
+<%- include('./partials/footer')%>
+
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("showHelp");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('showHelp')) {
+          openDropdown.classList.remove('showHelp');
+        }
+      }
+    }
+  }
+</script>
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction2() {
+    document.getElementById("myDropdown2").classList.toggle("showAbout");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn2')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content2");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('showAbout')) {
+          openDropdown.classList.remove('showAbout');
+        }
+      }
+    }
+  }
+</script>
+</body>
+</html>
