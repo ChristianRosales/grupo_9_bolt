@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head')%>
+<body>
+<%- include('./partials/header')%>
+
+<main>
+  <form action="/registro" method="POST" class="create-form">
+    <h1 class="tile-iniciar">INICIAR SESIÓN</h1>
+    <div class="control-formulario">
+        <input type="email" name="email"  placeholder="CORREO ELECTRÓNICO*" class="control" required>
+    </div>
+    <div class="control-formulario">    
+        <input type="password" name="password" placeholder="CONTRASEÑA*" required class="control">
+    </div>
+
+    <div class="terms-combo control-formulario">
+        <label class="terminos">Al iniciar sesión, acepta la Politica de privacidad y los Términos de uso</label>
+    </div>
+    <div class="iniciar-btn control-formulario">        
+        <button type="submit" name="enviar">
+            <a href="/" class="link-home">INGRESAR</a>  
+        </button>
+    </div>
+    <div class="register_link">
+      <span>¿No eres miembro?</span>
+      <a href="/register">Únete</a>
+    </div>
+</form>
+</main>
+
+<%- include('./partials/footer')%>
+
+</body>
+</html>
