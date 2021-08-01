@@ -1,0 +1,38 @@
+[
+ {
+  "id": 1,
+  "name": "LeBron 18 Low Summer Refresh",
+  "price": 2849,
+  "color": "Lima blanco/Verde nuevo/Mango brillante",
+  "category": "Hombre",
+  "description": "Un jugador con el poder y la agilidad de LeBron necesita un calzado ligero y resistente que aproveche su fuerza, pero que también permita que se mueva con precisión.La gama de colores LeBron 18 Low Summer Refresh estalla en la cancha con tonos lima brillante y mango.Es más bajo y más ligero que su calzado de juego, con espuma Max Air Plus React, proporcionando amortiguación de impactos y capacidad de respuesta.El cuello acolchado y esculpido y el clip del talón estilizado ayudan a asegurar el pie durante los partidos.",
+  "image": "lebron_summer.jpeg"
+ },
+ {
+    "id": 2,
+    "name": "Nike Air Max Pre-Day BeTrue",
+    "price": 2799,
+    "color": "Azul Neptuno",
+    "category": "Colección",
+    "description": "La colección BeTrue de este año rinde homenaje al orgullo de las comunidades LGBTQIA+ en todo el mundo.El Nike Air Max Pre-Day BeTrue viene con nueve banderas, con cierre por contacto, que representan a las múltiples comunidades de identidades de género y orientaciones sexuales.Elige lo que te representa con colores audaces que dan un testimonio duradero.",
+    "image": "BeTrue.jpeg"
+   },
+   {
+      "id": 3,
+      "name": "Nike Canyon",
+      "price": 1599,
+      "color": "Arena desierto/Laguna pulso/Negro/Mango brillante",
+      "category": "Mujer",
+      "description": "Las sandalias Nike Canyon le dan un toque de estilo a cualquier trayecto que recorras. El diseño inspirado en la herencia presenta una suela resistente, una entresuela de espuma suave, un cierre de triple correa y acabados metalizados premium. Desde paisajes urbanos hasta riberas, esta versátil fuerza motriz ofrece una pisada firme y cómoda para que enfrentes lo que sea que se te presente el camino.",
+      "image": "canyon.jpeg"
+     },
+     {
+      "id": 4,
+      "name": "Nike Nike Phantom GT Elite Dynamic Fit 3D FG",
+      "price": 5499,
+      "color": "Azul cloro/Amarillo",
+      "category": "Hombre",
+      "description": "Los jugadores Phantom son polifacéticos: son calculadores e instintivos, y tienen un estilo de juego provocador. El Nike Phantom GT Elite Dynamic Fit 3D FG incluye estas características con un logotipo Swoosh repetido y un revestimiento inspirado en la 3D que representa los tres lados de cada jugador Phantom.",
+      "image": "phantom.jpeg"
+     }    
+]

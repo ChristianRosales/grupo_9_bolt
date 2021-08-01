@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('../partials/head', {title: 'Carrito'}) %>
+    <link rel="stylesheet" href="/css/sShoppingCart.css">
+    <body>
+    <%- include('../partials/header') %>
+    
+<main>
+<section class="cart-container">
+    <article class="photo-container">
+      <img src="/images/lebron_summer.jpeg" id="firstphoto">
+    </article>
+    <article class="attributes">
+      <h1 class="nameP">LeBron 18 Low "Summer Refresh"</h1>
+      <h3 class="colorP">COLOR: Lima blanco/Verde nuevo/Mango brillante</h3>
+      <h3 class="sizeP">TALLA: 26</h3>
+      <div class="amount-price">
+           <div class="select-cantidad">
+              <label>CANTIDAD</label>
+              <select name="cantidad" id="cantidad">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>        
+              </select>
+           </div>
+           <h2 class="priceP">Mex$2849</h2>
+      </div>
+      <div class="take-off">
+        <a href="#">QUITAR PRODUCTO</a>
+      </div>
+    </article>
+    <article class="paySection">
+      <h2 class="order">Resumen del pedido</h2>
+      <h2 class="subtotal">SUBTOTAL: Mex$2849</h2>
+      <h1 class="total">TOTAL DEL PEDIDO MEX$2849</h1>
+      <a href="#" class="pay-button">PROCEDER AL PAGO</a>
+    </article>  
+</section>
+</main>
+<%- include('../partials/footer') %>
+</body>
+</html>

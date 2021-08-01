@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('./partials/head') %>
+<%- include('./partials/head', {title: 'Inicio'}) %>
+<link rel="stylesheet" href="/css/styles.css">    
+
 <body>
 <%- include('./partials/header') %>  
   <!--BS-carousel container-->        
@@ -53,7 +55,7 @@
           <article>
               <img src="/images/lebron_summer.jpeg" alt="">
               <div class="caja">
-                <a href="/productDetail"><p class="precio">Mex$3799</p></a>
+                <a href="/products/detail"><p class="precio">Mex$3799</p></a>
                   <h4 class="nombreProd">LeBron 18 Low "Summer Refresh"</h4>
                   <p class="descripcion">Calzado de básquetbol</p>
                   <p class="color">1 color</p>
@@ -72,7 +74,7 @@
               <img src="/images/phantom.jpeg" alt="">
               <div class="caja">
                   <p class="precio">Mex$5499</p>
-                  <h4 class="nombreProd">Nike Nike Phantom GT Elite Dynamic Fit 3D FG</h4>
+                  <h4 class="nombreProd">Nike Phantom GT Elite Dynamic Fit 3D FG</h4>
                   <p class="descripcion">Calzado de fútbol para terreno firme</p>
                   <p class="color">1 color</p>
               </div>    
