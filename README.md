@@ -40,8 +40,8 @@ En todos los sitios que revisamos destaca que:
 ->Ofrecen crear una cuenta en su sitio
 
 ---> INTEGRANTES DEL EQUIPO 9:
-- Alicia Huidobro
-- Christian Rosales
+- Alicia Huidobro: soy Administradora Industrial. Me interesan la analítica web, el uso de datos con fines de inteligencia comercial y los modelos de aprendizaje automático.
+- Christian Rosales: soy un egresado de la carrera de Ingeniería en Computación, estoy interesado en el campo del desarrollo de software y también por el diseño de paginas web.
 
 ---> WIREFRAME PAGINA CALZADO DEPORTIVO "BOLT"
 https://wireframe.cc/pro/pp/c62d7eb49454032#1
